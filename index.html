@@ -1,98 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crazy Kittie</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crazy Crypto Kitties</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  body {
+    background-color: #fde9f4; /* Light pink background for a playful theme */
+  }
+  .carousel-item {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .navbar {
+    background-color: #f8d7da; /* Light pink navbar */
+  }
+  footer {
+    background-color: #f8d7da; /* Light pink footer */
+    padding: 10px 0;
+    text-align: center;
+  }
+  .social-links a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.5em; /* Larger icons */
+  }
+  .carousel-caption {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+</style>
 </head>
 <body>
 
-    <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Crazy Kittie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tokenomics">Tokenomics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#community">Community</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#roadmap">Roadmap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Crazy Crypto Kitties</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="py-5 text-center">
-        <div class="container">
-            <h1 class="display-4">Unleash Your Inner Crazy with Crazy Kittie</h1>
-            <p class="lead">The Ultimate Crypto Adventure!</p>
-            <!-- Insert image of Crazy Kittie here -->
+<div class="container">
+  <h2 class="text-center my-4">Meet Our Crazy Crypto Kitties</h2>
+  <div id="cryptoKittiesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="path-to-your-image/kitty1.jpg" class="d-block w-100" alt="Kitty One">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kitty One</h5>
+          <p>Here's the bio of Kitty One. Loves to chase laser pointers and invest in CatCoin.</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Crazy Kittie</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lorem et nulla bibendum, vitae varius neque bibendum. Donec sed sapien nec justo volutpat consectetur.</p>
-            <!-- More content about Crazy Kittie -->
+      </div>
+      <div class="carousel-item">
+        <img src="path-to-your-image/kitty2.jpg" class="d-block w-100" alt="Kitty Two">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kitty Two</h5>
+          <p>Kitty Two is all about naps and snacks, but jumps into action trading WhiskerToken.</p>
         </div>
-    </section>
-
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Tokenomics</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lorem et nulla bibendum, vitae varius neque bibendum. Donec sed sapien nec justo volutpat consectetur.</p>
-            <!-- More content about Tokenomics -->
+      </div>
+      <div class="carousel-item">
+        <img src="path-to-your-image/kitty3.jpg" class="d-block w-100" alt="Kitty Three">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kitty Three</h5>
+          <p>Always on the prowl for the next big crypto, Kitty Three is the sneakiest of them all.</p>
         </div>
-    </section>
-
-    <!-- Community Section -->
-    <section id="community" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Community</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lorem et nulla bibendum, vitae varius neque bibendum. Donec sed sapien nec justo volutpat consectetur.</p>
-            <!-- More content about Community -->
+      </div>
+      <div class="carousel-item">
+        <img src="path-to-your-image/kitty4.jpg" class="d-block w-100" alt="Kitty Four">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kitty Four</h5>
+          <p>The tech wizard of the group, Kitty Four mines crypto when not sunbathing.</p>
         </div>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Roadmap</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lorem et nulla bibendum, vitae varius neque bibendum. Donec sed sapien nec justo volutpat consectetur.</p>
-            <!-- More content about Roadmap -->
+      </div>
+      <div class="carousel-item">
+        <img src="path-to-your-image/kitty5.jpg" class="d-block w-100" alt="Kitty Five">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kitty Five</h5>
+          <p>The leader of the pack, Kitty Five is a fearless trader leading the bull run.</p>
         </div>
-    </section>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#cryptoKittiesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cryptoKittiesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque lorem et nulla bibendum, vitae varius neque bibendum. Donec sed sapien nec justo volutpat consectetur.</p>
-            <!-- More content about Contact -->
-        </div>
-    </section>
+<footer>
+  <div class="container">
+    <p>Follow us on:</p>
+    <div class="social-links">
+      <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/yourtelegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+  </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
